@@ -23,7 +23,7 @@ function initExtensionCard() {
 
     installExtension(url)
       .catch(function() {
-        window.open(url, '_blank');
+        window.open(url);
       });
 
   });
