@@ -22,8 +22,9 @@ function initExtensionCard() {
     var url = "https://chrome.google.com/webstore/detail/" + id;
 
     installExtension(url)
-      .catch(function() {
-        window.open(url);
+      .catch(function(err) {
+        console.log(err);
+        window.location.href = url;
       });
 
   });
