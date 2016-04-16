@@ -17,9 +17,7 @@ function initExtensionCard() {
   initEqualheight('.card-content');
   $('.card-install').click(function(event) {
     event.preventDefault();
-
-    var id = $(this).closest('.card-extension').data('extensionId');
-    var url = "https://chrome.google.com/webstore/detail/" + id;
+    var url = $(this).attr('href');
 
     installExtension(url)
       .catch(function(err) {
