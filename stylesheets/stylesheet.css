@@ -46,8 +46,19 @@
 
 /* CARDS */
 
-.card .card-content {
+.card.card-extension .card-content {
     padding: 4px 20px 10px 20px;
+}
+
+.card.card-extension .card-install{
+    display: block;
+    padding: 20px;
+    margin: 0 !important;
+}
+
+.card.card-extension .card-action{
+    padding: 0;
+    overflow: hidden;
 }
 
 
