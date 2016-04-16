@@ -21,7 +21,7 @@ function initExtensionCard() {
 
     installExtension(url)
       .catch(function(err) {
-        console.log(err);
+        if('User cancelled install' === err) return;
         window.location.href = url;
       });
 
